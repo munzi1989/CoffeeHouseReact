@@ -2,37 +2,68 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.masthead {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 90vh;
+  min-height: 500px;
+  background-image: url('../src/images/mike-kenneally-tNALoIZhqVM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#welcome {
+ padding-top: 4rem;
+ color: antiquewhite;
+ font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inline {
+  display: inline;
 }
 
-.App-link {
-  color: #61dafb;
+.newsletter {
+  margin-top: 13rem;
+  margin-right: 5rem;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, .2); 
+  padding: 20px; 
+  border-radius: 20px; 
+  margin-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.float-left {
+  float: left;
 }
+
+.jumbotron {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+nav {
+  background-color: silver;
+  color: antiquewhite;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.button {
+  font-weight: bolder;
+  
+  background-color:white;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.logo {
+  float: 'left';
+  padding-right: 3rem;
+}
+
+NavItem {
+  padding-right: 2rem;
+}
+
