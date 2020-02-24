@@ -2,7 +2,47 @@
   text-align: center;
 }
 
+.pad {
+  padding: 1.3rem;
+}
+
+.font {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15%;
+}
+
+.nr {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  
+}
+
+.carousel {
+  border: solid black;
+  border-width: .2rem;
+  border-top: blanchedalmond;
+  color: blue;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+.carousel-item > img { 
+  width: 100%; 
+}
+
+
+.navbar {
+  background-color: black;
+}
+
 .masthead {
+  margin:0;
   margin-top: 0;
   margin-bottom: 0;
   height: 90vh;
@@ -21,6 +61,10 @@
 
 .inline {
   display: inline;
+}
+
+.btn {
+  color: blue;
 }
 
 .newsletter {
@@ -63,7 +107,4 @@ nav {
   padding-right: 3rem;
 }
 
-NavItem {
-  padding-right: 2rem;
-}
 

@@ -1,65 +1,78 @@
 import React, { Component } from 'react';
-import { Collapse,  Navbar, Nav, NavItem, NavLink, NavbarBrand, NavbarText, NavbarToggler, DropdownItem, UncontrolledDropdown, DropdownMenu, DropdownToggle} from 'reactstrap';
+import { Collapse, Navbar, Nav, NavItem, NavLink, NavbarBrand, NavbarToggler, DropdownItem, UncontrolledDropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import * as FontAwesome from 'react-icons/lib/fa';
+
+
 
 
 
 class Navigation extends Component {
-;
-    constructor(props){
-        super(props)
+  ;
+  constructor(props) {
+    super(props)
 
-        this.state = {
-            isOpen: false
-            
-        }        
-        this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+
     }
+    this.toggle = this.toggle.bind(this);
+  }
 
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        })
-    }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
 
-    render() {
-        return(
+  render() {
+    return (
+      <Navbar className='Navbar, nav' sticky='top' dark expand="md">
+        <NavbarBrand href="#" >
+          <img
+            src={require('../images/logo.jpg')}
+            width='30'
+            height='30'
+            alt='Logo'
+            style={{ borderRadius: 30}}
             
-      <Navbar sticky='top' className='nav' light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+          />
+        </NavbarBrand>
+        <NavbarBrand href="#">Munzi Mocha</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="#start">Menu</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="#pics">Photos</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Options
+                More
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Option 1
+                  Location
                 </DropdownItem>
                 <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
+                  Hours
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <a href='https://www.facebook.com/ ' style={{ padding: 15 }}><FontAwesome.FaFacebook color='white' size={30} /></a> 
+          <a href='https://www.twitter.com' style={{ padding: 15 }}><FontAwesome.FaTwitter color='white' size={30}/></a>
+          <a href='https://www.instagram.com' style={{ padding: 15 }}><FontAwesome.FaInstagram color='white' size={30}/></a>
+          
+          
         </Collapse>
-      </Navbar>
-    
 
-        )
-    }
+      </Navbar>
+
+
+    )
+  }
 
 }
 

@@ -3,8 +3,10 @@ import './App.css';
 import Header from './components/HeaderComponent';
 import Navigation from './components/NavComponent';
 import Cards from './components/CardComponent';
-import CarouselComponent from './components/CarouselComponent';
-import MapComponent from './components/MapComponent';
+import Carousel from './components/CarouselComponent';
+import MenuComponent from './components/MenuComponent';
+import Footer from './components/FooterComponent';
+
 
 class App extends Component {
   render() {
@@ -13,8 +15,9 @@ class App extends Component {
         <Header />
         <Navigation />
         <Cards />
-        <CarouselComponent />
-        <MapComponent />
+        <Carousel />
+        <MenuComponent />
+        <Footer/>
       </div>
     );
   }
