@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, CardImg, CardText, Button, Row, Col, Container, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
 import img2 from '../images/coffee 700x459.png';
 import img3 from '../images/car2 700x463.png';
-import Background from '../images/shop.jpg';
+import background from '../images/IMG4.jpg';
 
 
 
@@ -12,7 +12,7 @@ class Cards extends Component {
         super(props);
 
         this.state = {
-
+            bg: background,
             img2: img2,
             img3: img3,
             isOpen: false
@@ -60,21 +60,26 @@ class Cards extends Component {
                                 </Label>
                                 </Col>
                                 <br />
-                                <Button type='submit' color='primary'>Sign Up</Button>
+                                <Button type='submit' color='secondary'>Sign Up</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>
                 </Modal>
 
 
-                <Container className='nr' style={{ backgroundImage: `url(${Background})`, padding: '20px', justifyContent: 'center' }} fluid>
+                <Container className='nr' style={{ backgroundImage: `url(${this.state.bg})`, padding: '20px', justifyContent: 'center', border: 'solid black' }} fluid>
+                    <Row className='special'>
+                        <Col className='mainFont' style={{color: 'white', fontSize: 40 }}>
+                        <p>We've been serving Kansas City delicious coffee for over 9 years! We specialize in exotic coffees from Africa, Southeast Asia and the middle east, along with scrumptious home-made danish. Make us part of your morning and visit us soon! </p>
+                        </Col>
+                    </Row>
                     <Row style={{justifyContent: 'center'}}>
                         <Col xs='auto' className='m-5'>
                             <Card style={{ width: '18rem', padding: '5px', border: 'black solid' }}>
                                 <CardImg top width="100%" src={this.state.img2} alt="Card image cap" />
                                 <CardBody>
                                     <CardText>From Columbian to Nicaraguan, we have an assortment of delicious flavors!</CardText>
-                                    <Button color='primary' href="https://www.coffeeam.com/flavored-coffee.html" target="_blank">Coffee Flavors</Button>
+                                    <Button color='secondary' href="https://www.coffeeam.com/flavored-coffee.html" target="_blank">Coffee Flavors</Button>
                                 </CardBody>
                             </Card>
                         </Col>
@@ -83,7 +88,7 @@ class Cards extends Component {
                                 <CardImg top width="100%" src={this.state.img3} alt="Card image cap" />
                                 <CardBody>
                                     <CardText>Join our weekly newsletter to stay informed! Click below and enter your email address!</CardText>
-                                    <Button color='primary' onClick={this.toggleModal}>Newsletter</Button>
+                                    <Button color='secondary' onClick={this.toggleModal}>Newsletter</Button>
                                 </CardBody>
                             </Card>
                         </Col>

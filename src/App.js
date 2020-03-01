@@ -6,6 +6,7 @@ import Cards from './components/CardComponent';
 import Carousel from './components/CarouselComponent';
 import MenuComponent from './components/MenuComponent';
 import Footer from './components/FooterComponent';
+import MapComponent from './components/MapComponent';
 
 
 class App extends Component {
@@ -16,7 +17,9 @@ class App extends Component {
         <Navigation />
         <Cards />
         <Carousel />
+        <MapComponent/>
         <MenuComponent />
+        
         <Footer/>
       </div>
     );
