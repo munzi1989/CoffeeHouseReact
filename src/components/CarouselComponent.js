@@ -22,60 +22,45 @@ class CarouselComponent extends Component {
 
     render() {
         return (
-            <Container id='pics' className='nr hidden-sm visible-lg-* visible-md-*' style={{ backgroundImage: `url(${this.state.bg})`, padding: '10rem' }} fluid >
-                <div className='special' style={{borderRadius: '50%'}}>
-                <Row className='mainFont' style={{padding: '5rem', color: 'white', fontSize: 40 }}>
-                    <p>We love to showcase our specialty items here. Stay vigilant! They only last 1 week before we roll out new and exciting items!</p>
-                </Row>
+            <React.Fragment>
+
+                <div style={{ backgroundColor: 'grey' }}>
+                    <Row className='mainFont' style={{ padding: '2rem', color: 'white', fontSize: 40 }}>
+                        <p>We love to showcase our specialty items here. Stay vigilant! They only last 1 week before we roll out new and exciting flavors!</p>
+                    </Row>
                 </div>
-                <Carousel >
-                    <Carousel.Item >
-                        <img
-                            className="d-block w-100"
-                            src={`${this.state.slide1}`}
-                            alt="First slide"
-                        />
-                        <Carousel.Caption className='.visible-lg-*' style={{ marginBottom: 350 }}>
-                            <div className='special' style={{ padding: 30, borderRadius: 25 }}>
-                                <div style={{ opacity: 1, color: 'white' }}>
-                                    <p >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </div>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={this.state.slide2}
-                            alt="Third slide"
-                        />
 
-                        <Carousel.Caption style={{ marginBottom: 350 }}>
-                            <div className='special' style={{ padding: 30, borderRadius: 25 }}>
-                                <div style={{ opacity: 1, color: 'white' }}>
-                                    <p >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </div>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={this.state.slide3}
-                            alt="Third slide"
-                        />
+                <Container id='pics' className='nr hidden-sm visible-lg-* visible-md-*' style={{ backgroundImage: `url(${this.state.bg})`, padding: '5rem' }} fluid >
 
-                        <Carousel.Caption style={{ marginBottom: 350 }}>
-                            <div className='special' style={{ padding: 30, borderRadius: 25 }}>
-                                <div style={{ opacity: 1, color: 'white' }}>
-                                    <p >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </div>
-                            </div>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
+                    <Carousel >
+                        <Carousel.Item >
+                            <img
+                                className="d-block w-100"
+                                src={`${this.state.slide1}`}
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={this.state.slide2}
+                                alt="Third slide"
+                            />
 
-            </Container>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={this.state.slide3}
+                                alt="Third slide"
+                            />
+
+                        </Carousel.Item>
+                    </Carousel>
+
+                </Container>
+            </React.Fragment>
+
         )
     }
 }
