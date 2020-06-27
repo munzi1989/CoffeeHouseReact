@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, CardBody, CardImg, CardText, Button, Row, Col, Container, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Card, CardBody, CardImg, CardText, Button, Row, Col, Container, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input} from 'reactstrap';
 import img2 from '../images/coffee 700x459.png';
 import img3 from '../images/car2 700x463.png';
 import background from '../images/IMG4.jpg';
@@ -18,10 +18,19 @@ class Cards extends Component {
             isOpen: false
         };
         this.toggleModal = this.toggleModal.bind(this);
-
+        this.submitFunction = this.submitFunction.bind(this);
     };
 
     toggleModal = () => this.setState(state => ({ isOpen: !state.isOpen }));
+
+    
+
+    submitFunction = (event) => {
+        event.preventDefault();
+        alert('Your contact info has been submitted!');
+        this.toggleModal();
+
+    }
 
     render() {
 
@@ -30,7 +39,7 @@ class Cards extends Component {
                 <Modal toggle={this.toggleModal} isOpen={this.state.isOpen}>
                     <ModalHeader toggle={this.toggleModal}>Contact Information</ModalHeader>
                     <ModalBody>
-                        <Form >
+                        <Form onSubmit={this.submitFunction} >
                             <FormGroup>
                                 <Label for='firstName'>First Name</Label>
                                 <Col>

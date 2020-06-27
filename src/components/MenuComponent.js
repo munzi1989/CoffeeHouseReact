@@ -27,7 +27,7 @@ class MenuComponent extends Component {
                                     <Media heading>
                                        <text>Half & Half  $3.50</text> 
                                     </Media>
-                                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                           A local favorite. Half fresh-brewed coffee and half locally-sourced cream.
                                 </Media>
                             </Media>
                         </Col>
@@ -38,7 +38,7 @@ class MenuComponent extends Component {
                                     <Media heading>
                                         Frapps $4.90
                                     </Media>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                    What's better on a hot day? Blended iced coffee with an ssortmetn of flavors!
                                 </Media>
                             </Media>
                         </Col>
@@ -49,7 +49,7 @@ class MenuComponent extends Component {
                                     <Media heading>
                                         Danish $6.25
                              </Media>
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                    Made fresh daily! Try our new cheesecake danish or our dark chocolate topped danish.
                         </Media>
                             </Media>
                         </Col>
@@ -63,7 +63,7 @@ class MenuComponent extends Component {
                                         <Media heading>
                                             Espresso $3.20
                                         </Media>
-                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                        A simple yet delicious classic. Now in small or large sizes.
                                     </Media>
 
                                 </Media>
@@ -76,7 +76,7 @@ class MenuComponent extends Component {
                                         <Media heading>
                                             Cappuccino $5.75
                                     </Media>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                           Made with steamed milk (microfoam), it goes great with scones!
                                 </Media>
                                 </Media>
                             </Col>
@@ -87,7 +87,7 @@ class MenuComponent extends Component {
                                         <Media heading>
                                              Coffee $4.95
                              </Media>
-                                                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+                                Straight up hot coffee. Choose from several flavors, grinds and roasts! 
                         </Media>
                                 </Media>
                             </Col>
